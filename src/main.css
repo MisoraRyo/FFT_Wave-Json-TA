@@ -1,0 +1,55 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	overscroll-behavior: none;
+	overflow: hidden;
+}
+canvas{
+	vertical-align: bottom;
+	user-select: none;
+	-webkit-touch-callout:none;
+	-webkit-user-select:none;
+}
+canvas:focus {outline: none;}
+canvas::selection{background-color:transparent}
+
+#contents{
+    position: absolute;
+    top: 15px;left:20px;
+    color: #222;
+}
+h1{
+    font-size: min(4vw, 2em);
+}
+#gpu-text{
+   margin: 1em 0em;
+   font-size: .65em;
+   line-height: 1.5em;
+   padding-left: 20px;
+}
+
+#inputArea{
+    margin: 1.5em 0.65em;
+}
+
+.btn-area{
+    display: flex;
+    align-items: center;
+}
+.btn-area-item{
+    margin-right: 0.5em;
+}
+
+#Play-Btn{
+    font-size: min(4vw, 2em);
+}
+#Stop-Btn{
+    font-size: min(4vw, 2em);
+}
+#gpu-textB{
+    margin: 1em 0.5em;
+    font-size: .5em;
+}
+#stats{
+    position: relative;
+}

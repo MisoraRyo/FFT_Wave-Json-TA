@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Ryo Misora">
+<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<title>FFT&WAVE Json_Download -TextAlive-</title>
+<meta name="description" content="MP3データのFFT&WaveデータをTextAlive_API用のJSON形式でダウンロードするサイトです。">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+<style></style>
+</head>
+<body>
+<div id="contents">
+    <!--説明-->
+    <h1>FFT&WaveをTextAlive用のJson形式で出力する</h1>
+    <ol id="gpu-text">
+        <li>「ファイルを選択」から解析したい.MP3ファイルを読み込みます。</li>
+        <li>FPSの数値から、データの精度を算出します。<strong>（例:60fpsで5を選択すると、60/5=12で1s間に12個のデータを作ります）</strong></li>
+        <li>「PLAY」ボタンを押して楽曲を再生させて、その再生区間のデータを取り込みます。</li>
+        <li>「Download」ボタンして、データをダウンロードしてください。</li>
+        <li>データの内容は、t:time、F:FFT、W:waveのデータです。fftSize=128で64個のデータが入っています。(詳細はscript.js)</li>
+    </ol>
+
+    <!--File Input-->
+    <div id="inputArea">
+        <input id="myfile" type="file" accept=".mp3">
+    </div>
+
+    <!--STATS SETt-->
+    <div id="stats"></div>
+
+    <!--調整-->
+    <div class="btn-area">
+        <p class="btn-area-item">データの精度</p>
+        <input type="number" id="num1" value="10" min="1" max="60"/>
+    </div>
+
+    <!--Audio-->
+    <div class="btn-area">
+        <button id="Play-Btn">PLAY</button>
+        <button id="Stop-Btn">STOP</button>
+        <button id="Json">JSON Download</button>
+    </div>
+
+    <div id="gpu-textB">0 / 0</div>
+</div>
+
+<!--グラフィックス-->
+<canvas id="MyCanvas"></canvas>
+</body>
+</html>
