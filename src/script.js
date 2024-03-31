@@ -323,6 +323,4 @@ gui.add( params, 'myVisibleBoolean2').name('camera_control').listen()
 });
 
 
-
-
 };
