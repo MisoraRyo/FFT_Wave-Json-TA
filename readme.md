@@ -4,6 +4,8 @@
 
 MP3のAudioデータのFFT&WaveデータをTextAlive_API用のJSON形式でダウンロードするサイトです。
 
+This is a site to download FFT&Wave data of MP3 Audio data in JSON format for TextAlive_API.
+
 ## Demo
 
 https://misora.main.jp/ea4azmyb/createjson/
@@ -24,5 +26,3 @@ npm run dev
 ## Resource
 
 Three.js
-
-TextAlive.api
