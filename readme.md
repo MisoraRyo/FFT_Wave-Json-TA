@@ -2,7 +2,7 @@
 
 <img src="./static/image.png" width="100%"/>
 
-MP3のAudioデータのFFT&WaveデータをTextAlive_API用のJSON形式でダウンロードするサイトです。
+MP3のAudioデータのFFT&WaveデータをTextAlive_API用のJSON形式でダウンロードできるサイトです。
 
 This is a site to download FFT&Wave data of MP3 Audio data in JSON format for TextAlive_API.
 
